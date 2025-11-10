@@ -1,0 +1,62 @@
+{
+  "name": "typemark",
+  "version": "1.0.0",
+  "description": "A fully type-safe, efficient TypeScript Markdown parser with lexer, parser, and AST visitor",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "markdown",
+    "parser",
+    "lexer",
+    "ast",
+    "typescript",
+    "markdown-parser",
+    "markdown-to-html",
+    "gfm",
+    "type-safe"
+  ],
+  "author": "NotKeira",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.3",
+    "@typescript-eslint/parser": "^8.46.3",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NotKeira/typemark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NotKeira/typemark/issues"
+  },
+  "homepage": "https://github.com/NotKeira/typemark#readme"
+}
