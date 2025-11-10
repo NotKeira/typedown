@@ -1,5 +1,5 @@
 /**
- * TypeMark - Parse Result Types
+ * TypeDown - Parse Result Types
  * @module types/result
  * @author NotKeira
  * @version 1.0.0

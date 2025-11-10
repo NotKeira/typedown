@@ -1,5 +1,5 @@
 /**
- * TypeMark - Abstract Syntax Tree Type Definitions
+ * TypeDown - Abstract Syntax Tree Type Definitions
  * @module types/ast
  * @author NotKeira
  * @version 1.0.0

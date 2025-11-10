@@ -1,14 +1,14 @@
 /**
- * TypeMark - Configuration Options
+ * TypeDown - Configuration Options
  * @module types/options
  * @author NotKeira
  * @version 1.0.0
  */
 
 /**
- * Configuration options for the TypeMark parser
+ * Configuration options for the TypeDown parser
  */
-export interface TypeMarkOptions {
+export interface TypeDownOptions {
     /** Enable GitHub Flavored Markdown extensions */
     readonly gfm?: boolean;
     /** Enable line breaks without double spaces */

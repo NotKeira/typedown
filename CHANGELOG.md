@@ -29,7 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Core type definitions
     - Token and TokenType for lexer output
     - ASTNode and ASTVisitor for parser and traversal
-    - TypeMarkOptions for parser configuration
+    - ~~TypeMarkOptions~~TypeDownOptions for parser configuration
     - Position interface for source location tracking
     - ParseResult interface for parse operation output
     - Organized into logical modules with barrel export
@@ -38,5 +38,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Updated prepublishOnly script to use pnpm instead of npm
 - Configured pnpm@10.21.0 with integrity hash for Corepack
+- Rebranded package from typemark to typedown to avoid naming conflicts
 
-[Unreleased]: https://github.com/NotKeira/typemark/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/NotKeira/typedown/compare/v0.1.0...HEAD
